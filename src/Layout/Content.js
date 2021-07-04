@@ -63,7 +63,7 @@ const Content = () => {
                         }
                     </div>
                     <div className="col-span-4 mr-4 mt-10">
-                        <div className="hover:shadow-2xl border cursor-pointer p-3 rounded bg-white text-center">
+                        <div className="hover:shadow-2xl border cursor-pointer p-3 w-3/4 rounded-xl bg-white text-center">
                             <a className="text-lg font-semibold" href="https://youtube.com">
                                 Редактировать информацию
                             </a>

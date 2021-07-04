@@ -73,12 +73,12 @@ const SideBar = () => {
             <div className="mx-10 my-10">
                 {
                     services.map((item, index) => (
-                        <div key={index + "services"} className="grid mt-5 grid-cols-12 text-white text-xl bg-transparent">
+                        <div key={index} className="grid mt-5 grid-cols-12 hover:text-yellow-700 cursor-pointer text-white text-xl bg-transparent">
                             <div className="col-span-9 text-left bg-transparent">
-                                <a className="hover:text-yellow-800" href={item.url}>{item.name}</a>
+                                <a href={item.url}>{item.name}</a>
                             </div>
                             <div className="col-span-3">
-                                <a className="hover:text-yellow-800 text-gray-400 text-xs" href={item.url}>{item.icon}</a>
+                                <a className="text-gray-400 text-xs" href={item.url}>{item.icon}</a>
                             </div>
                         </div>
                     ))
