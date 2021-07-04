@@ -57,11 +57,11 @@ const services = [
 const SideBar = () => {
     return (
         <>
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-3 pl-2">
                 <div className="col-span-1 w-14 h-14 mt-10 ml-10">
                     <img src={Image} alt="User" />
                 </div>
-                <div className="col-span-2 mt-12 mr-28">
+                <div className="col-span-2 mt-12 grid justify-items-start">
                     <h1 className="text-gray-400 text-xs font-mono">
                         Ваш аккаунт
                     </h1>
@@ -70,10 +70,10 @@ const SideBar = () => {
                     </h1>
                 </div>
             </div>
-            <div className="mx-10 my-10">
+            <div className="mx-12 my-10">
                 {
                     services.map((item, index) => (
-                        <div key={index} className="grid mt-5 grid-cols-12 hover:text-yellow-700 cursor-pointer text-white text-xl bg-transparent">
+                        <div key={index} className="grid mt-10 grid-cols-12 hover:text-yellow-700 cursor-pointer text-white text-xl bg-transparent">
                             <div className="col-span-9 text-left bg-transparent">
                                 <a href={item.url}>{item.name}</a>
                             </div>
